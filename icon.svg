@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="wifiGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b5ed7" />
+      <stop offset="100%" stop-color="#084298" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </linearGradient>
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Background Squircle with safe-zone margin -->
+  <rect x="16" y="16" width="480" height="480" rx="108" fill="url(#wifiGrad)" filter="url(#dropShadow)" />
+  <rect x="16" y="16" width="480" height="240" rx="108" fill="url(#glowGrad)" />
+
+  <!-- QR subtle decorative framing corners in background -->
+  <g stroke="#ffffff" stroke-opacity="0.2" stroke-width="8" fill="none">
+    <path d="M 72 136 L 72 72 L 136 72" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M 440 136 L 440 72 L 376 72" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M 72 376 L 72 440 L 136 440" stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M 440 376 L 440 440 L 376 440" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- High-contrast Wi-Fi Waves inside Safe Zone -->
+  <g fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Outer Arc -->
+    <path d="M 120 188 C 196 112 316 112 392 188" stroke-width="34" />
+    <!-- Middle Arc -->
+    <path d="M 166 238 C 220 184 292 184 346 238" stroke-width="32" />
+    <!-- Inner Arc -->
+    <path d="M 212 288 C 238 262 274 262 300 288" stroke-width="30" />
+  </g>
+
+  <!-- Center Wi-Fi Dot / Point -->
+  <circle cx="256" cy="358" r="26" fill="#ffffff" />
+</svg>

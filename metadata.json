@@ -1,0 +1,6 @@
+{
+  "name": "Wi-Fi QR Generator",
+  "description": "Progressive Web App to generate standard Wi-Fi QR codes with offline support and instant mobile scanning.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
